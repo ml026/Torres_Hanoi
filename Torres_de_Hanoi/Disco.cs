@@ -8,11 +8,9 @@ namespace Torres_de_Hanoi
 {
     class Disco
     {
-        /*TODO: 
-        Decidir tipo de Valor
-        public int Valor { get; set; }
-        public String Valor { get; set; }
-        */
+        //Creamos el atributo valor de tipo int. Se trata del tamaño del disco
+        public int valor { get; set; }
+       
 
     }
 }
