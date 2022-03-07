@@ -11,6 +11,7 @@ namespace Torres_de_Hanoi
         //Creamos el atributo valor de tipo int. Se trata del tamaño del disco
         public int valor { get; set; }
        
+       
 
     }
 }
