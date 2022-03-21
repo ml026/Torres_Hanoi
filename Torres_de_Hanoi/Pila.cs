@@ -68,7 +68,7 @@ namespace Torres_de_Hanoi
         }
 
 
-        //Método que cogeel elemento a mover
+        //Método que coge el elemento a mover
         public Disco pop()
         {
             //Se guarda el disco a mover, para no perderlo

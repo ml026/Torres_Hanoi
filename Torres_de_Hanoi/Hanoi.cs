@@ -28,18 +28,30 @@ namespace Torres_de_Hanoi
                         b.push(a.pop());
                         numMovimientos++;
                         Console.WriteLine("Se ha movido" + b.Top.valor + " " + "de" + " " + a.Nombre + " " + "a" + " " + b.Nombre);
+                        if ((b.Nombre = "fin") && (b.Size == numDiscos))
+                        {
+                            solucion = true;
+                        }
                     }
                     else if (a.Top.valor < b.Top.valor)
                     {
                         b.push(a.pop());
                         numMovimientos++;
                         Console.WriteLine("Se ha movido" + b.Top.valor + " " + "de" + " " + a.Nombre + " " + "a" + " " + b.Nombre);
+                        if ((b.Nombre = "fin") && (b.Size == numDiscos))
+                        {
+                            solucion = true;
+                        }
                     }
                     else
                     {
                         a.push(b.pop());
                         numMovimientos++;
                         Console.WriteLine("Se ha movido" + a.Top.valor + " " + "de" + " " + b.Nombre + " " + "a" + " " + a.Nombre);
+                        if ((a.Nombre = "fin") && (a.Size == numDiscos))
+                        {
+                            solucion = true;
+                        }
                     }
 
                 }
